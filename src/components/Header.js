@@ -6,7 +6,7 @@ import SearchIcon from '@mui/icons-material/Search';
 
 const Header = () => {
   return (
-    <div className="bg-black flex text-white z-50 items-center sticky top-0 h-14 justify-evenly">
+    <div className="bg-black flex text-white z-50 items-center sticky top-0 h-14 justify-evenly px-4">
       <div className="flex items-center">
         <StoreIcon fontSize="large" className=" mx-3 text-orange" />
         <h2 className="font-bold  mr-3">eShop</h2>
