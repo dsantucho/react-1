@@ -2,6 +2,7 @@
 - Material IU core
 - Material UI Icons
 - TailwindsCSS
+- React router dom
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
