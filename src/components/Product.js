@@ -2,7 +2,7 @@ import React from 'react'
 
 const Product = ({id, title, image, price, rating}) => {
   return (
-    <div className='flex flex-col bg-background justify-end m-3 p-5 min-w-[100px] max-h-[400px]'>
+    <div className='flex flex-col bg-background justify-end m-3 p-5 min-w-[100px] max-h-[600px]'>
         <div className=' flex flex-col content-start flex-wrap'>
             <h3>{title}</h3>
             <p className='mt-2'>
