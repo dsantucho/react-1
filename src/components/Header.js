@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 //icons
 import ShoppingBasketRoundedIcon from '@mui/icons-material/ShoppingBasketRounded';
 import StoreIcon from '@mui/icons-material/Store';
@@ -7,10 +8,14 @@ import SearchIcon from '@mui/icons-material/Search';
 const Header = () => {
   return (
     <div className="bg-black flex text-white z-50 items-center sticky top-0 h-14 justify-evenly px-4">
-      <div className="flex items-center">
-        <StoreIcon fontSize="large" className=" mx-3 text-orange" />
-        <h2 className="font-bold  mr-3">eShop</h2>
-      </div>
+      
+      <Link to= '/' style={{textDecoration: 'none'}}>
+        <div className="flex items-center">
+          <StoreIcon fontSize="large" className=" mx-3 text-orange" />
+          <h2 className="font-bold  mr-3">eShop</h2>
+        </div>
+      </Link>
+      
       <div className="flex items-center flex-1  ">
         <input type="text" className="grow bg-background " />
         <SearchIcon  className="bg-orange h-5 text-black p-1" />
@@ -24,10 +29,12 @@ const Header = () => {
           <span >Your</span>
           <span className=" font-bold">Shop</span>
         </div>
-        <div className="flex mx-3 ">
-          <ShoppingBasketRoundedIcon fontSize="medium" className="mx-2"/>
-          <span>0</span>
-        </div>
+        <Link to='/checkout' style={{textDecoration: 'none'}}>
+          <div className="flex mx-3 ">
+            <ShoppingBasketRoundedIcon fontSize="medium" className="mx-2"/>
+            <span>0</span>
+          </div>
+        </Link>
       </div>
     </div>
   );
