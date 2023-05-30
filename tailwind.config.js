@@ -9,7 +9,9 @@ module.exports = {
         'white': '#ffffff',
         'black': '#000000',
         'background': '#FFFCFC',
-        'orange': '#FF8D29',
+        'orange': '#f9a72f',
+        'orange-light': '#f9b548',
+        'yellowLight':'#fddf7d',
       }
     },
     plugins: [],
