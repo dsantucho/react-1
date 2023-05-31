@@ -12,6 +12,8 @@ module.exports = {
         'orange': '#f9a72f',
         'orange-light': '#f9b548',
         'yellowLight':'#fddf7d',
+        'grey':'#f3f4f7',
+        'greyDarker':'#b8b9bb'
       }
     },
     plugins: [],
