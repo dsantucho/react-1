@@ -1,6 +1,15 @@
 import React from "react";
+//context
+import { useStateValue } from "../context/StateProvider";
 
 const CheckoutProduct = ({ id, title, image, price, rating }) => {
+  const [{basket}, dispatch] = useStateValue();
+  const removeFromBasket = () =>{
+    dispatch({
+      type:"REMOVE_FROM_BASKET",
+      id: id
+    })
+  }
   return (
     <div className="flex bg-background my-2 p-4">
       <div>
@@ -23,7 +32,7 @@ const CheckoutProduct = ({ id, title, image, price, rating }) => {
               <p>⭐</p>
             ))}
         </div>
-        <button className="bg-orange text-black p-2">Remove from Basket</button>
+        <button className="bg-orange text-black p-2" onClick={removeFromBasket}>Remove from Basket</button>
       </div>
     </div>
   );
