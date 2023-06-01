@@ -6,6 +6,7 @@ import StoreIcon from '@mui/icons-material/Store';
 import SearchIcon from '@mui/icons-material/Search';
 //context
 import { useStateValue } from "../context/StateProvider";
+import { textFieldClasses } from "@mui/material";
 
 const Header = () => {
   const [{basket}, dispatch] = useStateValue();
@@ -24,14 +25,18 @@ const Header = () => {
         <SearchIcon  className="bg-orange h-5 text-black p-1" />
       </div>
       <div className="flex items-center">
-        <div className="flex flex-col mx-3">
-          <span>Hello Guest</span>
-          <span className="font-bold">Sign In</span>
-        </div>
+        <Link to='/login' style={{textFieldClasses: "none"}}>
+          <div className="flex flex-col mx-3">
+            <span>Hello Guest</span>
+            <span className="font-bold">Sign In</span>
+          </div>
+        </Link>
+
         <div className="flex flex-col mx-3">
           <span >Your</span>
           <span className=" font-bold">Shop</span>
         </div>
+        
         <Link to='/checkout' style={{textDecoration: 'none'}}>
           <div className="flex mx-3 ">
             <ShoppingBasketRoundedIcon fontSize="medium" className="mx-2"/>
