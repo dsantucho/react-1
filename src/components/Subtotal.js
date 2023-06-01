@@ -1,7 +1,12 @@
 import React from 'react';
 import CurrencyFormat from 'react-currency-format';
 
+//context
+import { useStateValue } from '../context/StateProvider';
+import {getBasketTotal} from '../context/reducer';
+
 const Subtotal = () => {
+  const [{basket}, dispatch] =useStateValue();
   return (
     <div className='flex flex-col justify-between'>
       <CurrencyFormat
