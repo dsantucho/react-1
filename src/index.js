@@ -5,10 +5,15 @@ import './index.css';
 
 //components
 import App from './App';
+//context
+import reducer, {initialState} from './context/reducer';
+import { StateProvider } from './context/StateProvider';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <StateProvider initialState={initialState} reducer={reducer} >
+      <App />
+    </StateProvider>
   </React.StrictMode>
 );

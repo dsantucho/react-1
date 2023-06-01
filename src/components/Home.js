@@ -15,11 +15,11 @@ import Taburete from '../img/taburete.jpg';
 const Home = () => {
 
   return (
-    <div class="flex flex-col">
+    <div className="flex flex-col">
         <div className='border-y-2 border-yellowLight'>
             <img src={BannerImg} alt='banner img' ></img>
         </div>
-        <div class="bg-gradient-to-r from-yellowLight to-orange h-full flex  flex-col justify-around ">
+        <div className="bg-gradient-to-r from-yellowLight to-orange h-full flex  flex-col justify-around ">
             {/* using props */}
             <div className='flex'>
                 <Product

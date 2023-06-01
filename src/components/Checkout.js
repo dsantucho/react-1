@@ -1,5 +1,4 @@
 import React from 'react';
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
 //img
 import BannerAdd from '../img/banner-add.png';

@@ -4,8 +4,11 @@ import { Link } from 'react-router-dom';
 import ShoppingBasketRoundedIcon from '@mui/icons-material/ShoppingBasketRounded';
 import StoreIcon from '@mui/icons-material/Store';
 import SearchIcon from '@mui/icons-material/Search';
+//context
+import { useStateValue } from "../context/StateProvider";
 
 const Header = () => {
+  const [{basket}, dispatch] = useStateValue();
   return (
     <div className="bg-black flex text-white z-50 items-center sticky top-0 h-14 justify-evenly px-4">
       
@@ -32,7 +35,7 @@ const Header = () => {
         <Link to='/checkout' style={{textDecoration: 'none'}}>
           <div className="flex mx-3 ">
             <ShoppingBasketRoundedIcon fontSize="medium" className="mx-2"/>
-            <span>0</span>
+            <span className="text-white">{basket.length}</span>
           </div>
         </Link>
       </div>
