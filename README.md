@@ -1,3 +1,29 @@
+# React — Project - 1
+
+URL: https://react-1-d6b12.web.app/
+
+What we will do?
+- eShop Header
+- sShop Home Page
+- eShop Checkout Page
+- StateProvider, Reducer, useReducer Hook
+- Add to Cart and Remove using State Hooks
+- Login Page
+- Auth using Firebase
+- Deploying our App - Firebasee
+
+# Frameworks and Technologies
+- React-router-dom and react-currency-format
+- Material ui
+- React props
+- stateProvider and Reducer
+- React-context-API
+- React state hooks
+- Firebase for authentication 
+- Deploy app using firebase
+- Tailwind CSS style
+- Github
+
 # Tech
 - Material IU core
 - Material UI Icons
