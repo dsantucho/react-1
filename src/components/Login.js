@@ -51,10 +51,10 @@ const Login = () => {
                 <h2 className='text-2xl'>Sign In</h2>
                 <form className='flex flex-col p-1'>
                     <h3 className='text-lg my-2'>Email</h3>
-                    <input type='text' value={email} onChange={e=>setEmail(e.target.value)} className='p-1'/>
+                    <input type='text' value={email} onChange={e=>setEmail(e.target.value)} className='p-1 border-b-2 border-y-orange-light'/>
 
                     <h3 className='text-lg my-2'>Password</h3>
-                    <input type='password' value={password} onChange={e=>setPassword(e.target.value)} className='p-1'/>
+                    <input type='password' value={password} onChange={e=>setPassword(e.target.value)} className='p-1 border-b-2 border-y-orange-light'/>
 
                     <button type='submit' onClick={signIn} className='my-2 bg-orange-light p-1'>Sign In</button>
                 </form>
